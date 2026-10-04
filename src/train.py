@@ -13,10 +13,10 @@ from transformers import (
 
 MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
 
-TRAIN_FILE = Path("data/v3_train.jsonl")
-VALIDATION_FILE = Path("data/v3_validation.jsonl")
+TRAIN_FILE = Path("data/v4_train.jsonl")
+VALIDATION_FILE = Path("data/v4_validation.jsonl")
 
-OUTPUT_DIR = Path("models/regulatory-qwen-lora-v3")
+OUTPUT_DIR = Path("models/regulatory-qwen-lora-v4")
 
 
 class RegulatoryDataCollator:
