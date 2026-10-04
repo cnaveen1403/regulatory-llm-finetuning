@@ -1,0 +1,21 @@
+{"instruction": "Classify the following regulatory statement.", "input": "The pesticide must be stored separately from consumable products.", "output": "STORAGE_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product may not be marketed without valid regulatory registration.", "output": "REGISTRATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Applicators must wear protective eyewear when handling the pesticide.", "output": "SAFETY_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The pesticide registration must be renewed before it expires.", "output": "REGISTRATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The company must report specified incidents to the competent authority.", "output": "REPORTING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Required monitoring results must be submitted to the competent authority.", "output": "REPORTING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The label must state the authorized uses of the pesticide.", "output": "LABELING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Registrants must submit the required production information annually.", "output": "REPORTING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "A valid registration must be obtained before the product is placed on the market.", "output": "REGISTRATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Operators must use the required protective equipment during mixing.", "output": "SAFETY_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The labeling must contain the required first-aid instructions.", "output": "LABELING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Operators must follow measures designed to prevent environmental contamination.", "output": "ENVIRONMENTAL_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The operator must follow the permitted application timing.", "output": "APPLICATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product label must include the required storage instructions.", "output": "LABELING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Workers must wear chemical-resistant gloves when handling the pesticide.", "output": "SAFETY_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Application must prevent unacceptable environmental contamination.", "output": "ENVIRONMENTAL_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product must be used in a manner that protects pollinators.", "output": "ENVIRONMENTAL_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Applicators must follow the authorized use restrictions.", "output": "APPLICATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product must be stored in an area inaccessible to unauthorized persons.", "output": "STORAGE_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Applicators must follow the maximum dosage specified on the label.", "output": "APPLICATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Products must be stored separately from incompatible materials.", "output": "STORAGE_REQUIREMENT"}
