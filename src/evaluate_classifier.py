@@ -4,8 +4,9 @@ from pathlib import Path
 import torch
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from peft import PeftModel
 
-MODEL_PATH = Path("models/regulatory-qwen-classifier-v1")
+MODEL_PATH = Path("models/regulatory-qwen-lora-classifier-v1")
 TEST_FILE = Path("data/test.jsonl")
 
 
@@ -46,7 +47,17 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 
     print("Loading classification model...")
-    model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
+    BASE_MODEL = "Qwen/Qwen2.5-0.5B-Instruct"
+
+    base_model = AutoModelForSequenceClassification.from_pretrained(
+        BASE_MODEL,
+        num_labels=len(LABELS),
+    )
+
+    model = PeftModel.from_pretrained(
+        base_model,
+        MODEL_PATH,
+    )
 
     model.to(device)
     model.eval()
