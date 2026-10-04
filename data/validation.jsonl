@@ -1,0 +1,14 @@
+{"instruction": "Classify the following regulatory statement.", "input": "The company must provide the regulator with required monitoring information.", "output": "REPORTING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product must be stored in a dry and secure area.", "output": "STORAGE_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Workers must comply with the specified personal safety requirements.", "output": "SAFETY_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product label must include the registration number.", "output": "LABELING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "An application for registration must contain the required supporting documentation.", "output": "REGISTRATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The registrant must maintain a valid authorization for the product.", "output": "REGISTRATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Use of the pesticide must comply with environmental protection requirements.", "output": "ENVIRONMENTAL_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product must be applied using the approved application method.", "output": "APPLICATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product must be kept away from food and animal feed.", "output": "STORAGE_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The product must not be applied in areas subject to environmental restrictions.", "output": "ENVIRONMENTAL_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "The label must include the required environmental precautions.", "output": "LABELING_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Application must follow the directions specified on the approved label.", "output": "APPLICATION_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Workers must use chemical-resistant footwear during treatment.", "output": "SAFETY_REQUIREMENT"}
+{"instruction": "Classify the following regulatory statement.", "input": "Registrants must submit required regulatory information within the prescribed period.", "output": "REPORTING_REQUIREMENT"}
