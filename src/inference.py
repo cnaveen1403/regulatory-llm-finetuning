@@ -6,7 +6,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
 MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
-LORA_MODEL_PATH = Path("models/regulatory-qwen-lora-v2")
+LORA_MODEL_PATH = Path("models/regulatory-qwen-lora-v3")
 
 TEST_FILE = Path("data/test.jsonl")
 
