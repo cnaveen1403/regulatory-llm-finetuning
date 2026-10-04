@@ -54,21 +54,44 @@ def predict(
 ) -> str:
 
     prompt = f"""
-Classify the following regulatory statement into exactly
-one of these categories:
+Classify the following pesticide regulatory statement into exactly ONE category.
 
+Use these definitions carefully:
+
+SAFETY_REQUIREMENT:
+Requirements that protect people, workers, operators, or handlers from pesticide exposure.
+
+STORAGE_REQUIREMENT:
+Requirements governing how the pesticide or its container must be kept, stored, secured, or separated while not in use.
+
+APPLICATION_REQUIREMENT:
+Requirements governing what the operator or applicator must do when applying or using the pesticide.
+
+LABELING_REQUIREMENT:
+Requirements describing information, instructions, warnings, rates, or restrictions that must appear on the product label or packaging.
+
+REPORTING_REQUIREMENT:
+Requirements to report, submit, notify, or provide information to a regulatory authority.
+
+REGISTRATION_REQUIREMENT:
+Requirements to obtain, maintain, renew, or have regulatory authorization or registration before marketing or distributing the product.
+
+ENVIRONMENTAL_REQUIREMENT:
+Requirements intended to protect the environment, ecosystems, wildlife, aquatic organisms, or non-target organisms.
+
+Return ONLY the category name.
+
+Allowed categories:
 SAFETY_REQUIREMENT
-LABELING_REQUIREMENT
-REGISTRATION_REQUIREMENT
 STORAGE_REQUIREMENT
 APPLICATION_REQUIREMENT
-ENVIRONMENTAL_REQUIREMENT
+LABELING_REQUIREMENT
 REPORTING_REQUIREMENT
+REGISTRATION_REQUIREMENT
+ENVIRONMENTAL_REQUIREMENT
 
 Statement:
 {statement}
-
-Return only the category name.
 """
 
     messages = [
