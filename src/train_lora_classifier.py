@@ -15,6 +15,7 @@ from transformers import (
 MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
 
 TRAIN_FILE = Path("data/v4_train.jsonl")
+BOUNDARY_TRAIN_FILE = Path("data/boundary_train.jsonl")
 VALIDATION_FILE = Path("data/v4_validation.jsonl")
 
 OUTPUT_DIR = Path("models/regulatory-qwen-lora-classifier-v1")
@@ -120,10 +121,15 @@ def main():
     print("\nLoading datasets...")
 
     train_records = load_jsonl(TRAIN_FILE)
+    boundary_records = load_jsonl(BOUNDARY_TRAIN_FILE)
     validation_records = load_jsonl(VALIDATION_FILE)
 
-    print(f"Train examples:      {len(train_records)}")
-    print(f"Validation examples: {len(validation_records)}")
+    train_records.extend(boundary_records)
+
+    print(f"Original train examples:  {len(train_records) - len(boundary_records)}")
+    print(f"Boundary train examples:  {len(boundary_records)}")
+    print(f"Total train examples:     {len(train_records)}")
+    print(f"Validation examples:      {len(validation_records)}")
 
     for record in train_records:
         record["label"] = LABEL2ID[record["output"]]
@@ -185,6 +191,41 @@ def main():
     )
 
     # ---------------------------------------------------------
+    # Optimizer
+    # ---------------------------------------------------------
+
+    lora_parameters = []
+    classifier_parameters = []
+
+    for name, parameter in model.named_parameters():
+
+        if not parameter.requires_grad:
+            continue
+
+        if "score" in name:
+            classifier_parameters.append(parameter)
+            print(f"Classifier parameter: {name}")
+        else:
+            lora_parameters.append(parameter)
+
+    print(f"\nLoRA parameter tensors: {len(lora_parameters)}")
+    print(f"Classifier parameter tensors: {len(classifier_parameters)}")
+
+    optimizer = torch.optim.AdamW(
+        [
+            {
+                "params": lora_parameters,
+                "lr": 2e-5,
+            },
+            {
+                "params": classifier_parameters,
+                "lr": 1e-3,
+            },
+        ],
+        weight_decay=0.01,
+    )
+
+    # ---------------------------------------------------------
     # Trainer
     # ---------------------------------------------------------
 
@@ -194,6 +235,7 @@ def main():
         train_dataset=train_dataset,
         eval_dataset=validation_dataset,
         data_collator=data_collator,
+        optimizers=(optimizer, None),
     )
 
     # ---------------------------------------------------------

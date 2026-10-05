@@ -1,0 +1,34 @@
+{"input":"Workers who come into contact with pesticide during handling must receive prompt medical treatment if signs of poisoning appear.","output":"SAFETY_REQUIREMENT"}
+{"input":"Operators must wear appropriate respiratory protection when the pesticide may produce hazardous vapors during use.","output":"SAFETY_REQUIREMENT"}
+{"input":"Personnel exposed to pesticide residues must immediately remove contaminated clothing and wash the affected skin.","output":"SAFETY_REQUIREMENT"}
+{"input":"Employees handling the concentrated product must follow the required personal protection measures to prevent human exposure.","output":"SAFETY_REQUIREMENT"}
+
+{"input":"The product label must state the required interval between the final pesticide application and crop harvest.","output":"LABELING_REQUIREMENT"}
+{"input":"The approved label must specify the maximum number of applications permitted during a growing season.","output":"LABELING_REQUIREMENT"}
+{"input":"The package label must identify the crops and application situations for which the pesticide is authorized.","output":"LABELING_REQUIREMENT"}
+{"input":"The label must contain the required restrictions concerning when and where the product may be applied.","output":"LABELING_REQUIREMENT"}
+
+{"input":"Before commercial distribution, the manufacturer must obtain authorization for the pesticide from the competent regulatory authority.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"The company must renew its pesticide registration before the current authorization expires.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"A new pesticide product requires regulatory approval before it can be legally marketed.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"The pesticide may continue to be sold only while its regulatory registration remains valid.","output":"REGISTRATION_REQUIREMENT"}
+
+{"input":"Pesticide containers must be kept locked when they are not being used.","output":"STORAGE_REQUIREMENT"}
+{"input":"Unused pesticide must be kept in a secure location inaccessible to unauthorized persons.","output":"STORAGE_REQUIREMENT"}
+{"input":"Pesticides must remain in sealed containers while stored between applications.","output":"STORAGE_REQUIREMENT"}
+{"input":"The product must be stored separately from food and animal feed when not in use.","output":"STORAGE_REQUIREMENT"}
+
+{"input":"The applicator must observe the required waiting interval before allowing workers to enter the treated field.","output":"APPLICATION_REQUIREMENT"}
+{"input":"During spraying, the operator must maintain the specified setback distance from a nearby residential area.","output":"APPLICATION_REQUIREMENT"}
+{"input":"The applicator must maintain the required buffer distance from a pond while performing the treatment.","output":"APPLICATION_REQUIREMENT"}
+{"input":"Operators must follow the specified application rate when treating the crop with the pesticide.","output":"APPLICATION_REQUIREMENT"}
+
+{"input":"Pesticide use must not result in contamination of rivers, lakes, or groundwater.","output":"ENVIRONMENTAL_REQUIREMENT"}
+{"input":"The pesticide must not cause unacceptable harm to aquatic organisms in nearby water bodies.","output":"ENVIRONMENTAL_REQUIREMENT"}
+{"input":"Application of the product must be conducted in a manner that protects non-target wildlife from harmful exposure.","output":"ENVIRONMENTAL_REQUIREMENT"}
+{"input":"The use of the pesticide must not create unacceptable risks to pollinators or other beneficial insects.","output":"ENVIRONMENTAL_REQUIREMENT"}
+
+{"input":"The registrant must submit monitoring results to the regulatory authority at the end of the reporting period.","output":"REPORTING_REQUIREMENT"}
+{"input":"Any confirmed pesticide poisoning incident must be reported to the designated regulatory authority.","output":"REPORTING_REQUIREMENT"}
+{"input":"The company must provide the regulator with an annual report containing pesticide sales information.","output":"REPORTING_REQUIREMENT"}
+{"input":"Manufacturers must notify the authority when required monitoring data indicates an adverse incident.","output":"REPORTING_REQUIREMENT"}
