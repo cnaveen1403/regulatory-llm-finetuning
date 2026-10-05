@@ -4,3 +4,5 @@ accelerate
 scikit-learn==1.9.1
 peft==0.21.2
 datasets
+fastapi
+uvicorn
