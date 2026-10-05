@@ -5,9 +5,9 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
-COPY requirements.txt .
+COPY requirements-api.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements-api.txt
 
 COPY src ./src
 COPY models/production ./models/production
