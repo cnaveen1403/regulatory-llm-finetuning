@@ -15,7 +15,7 @@ from transformers import (
 MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
 
 TRAIN_FILE = Path("data/v4_train.jsonl")
-BOUNDARY_TRAIN_FILE = Path("data/boundary_train.jsonl")
+CONTRASTIVE_TRAIN_FILE = Path("data/contrastive_train.jsonl")
 VALIDATION_FILE = Path("data/v4_validation.jsonl")
 
 OUTPUT_DIR = Path("models/regulatory-qwen-lora-classifier-v1")
@@ -121,15 +121,17 @@ def main():
     print("\nLoading datasets...")
 
     train_records = load_jsonl(TRAIN_FILE)
-    boundary_records = load_jsonl(BOUNDARY_TRAIN_FILE)
+    contrastive_records = load_jsonl(CONTRASTIVE_TRAIN_FILE)
     validation_records = load_jsonl(VALIDATION_FILE)
 
-    train_records.extend(boundary_records)
+    train_records.extend(contrastive_records)
 
-    print(f"Original train examples:  {len(train_records) - len(boundary_records)}")
-    print(f"Boundary train examples:  {len(boundary_records)}")
-    print(f"Total train examples:     {len(train_records)}")
-    print(f"Validation examples:      {len(validation_records)}")
+    print(
+        f"Original train examples:     {len(train_records) - len(contrastive_records)}"
+    )
+    print(f"Contrastive train examples:  {len(contrastive_records)}")
+    print(f"Total train examples:        {len(train_records)}")
+    print(f"Validation examples:         {len(validation_records)}")
 
     for record in train_records:
         record["label"] = LABEL2ID[record["output"]]

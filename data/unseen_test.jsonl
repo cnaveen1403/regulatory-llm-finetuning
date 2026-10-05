@@ -1,0 +1,41 @@
+{"input":"Handlers must wear chemical-resistant gloves, protective eyewear, and long-sleeved clothing while mixing the pesticide.","output":"SAFETY_REQUIREMENT"}
+{"input":"Workers must wash their hands thoroughly with soap and water after handling the pesticide.","output":"SAFETY_REQUIREMENT"}
+{"input":"Individuals exposed to the pesticide must receive immediate medical attention if symptoms of poisoning occur.","output":"SAFETY_REQUIREMENT"}
+{"input":"The restricted-use pesticide may only be handled by trained personnel who have completed the required safety training.","output":"SAFETY_REQUIREMENT"}
+{"input":"Personnel must avoid eating, drinking, or smoking while handling the concentrated pesticide.","output":"SAFETY_REQUIREMENT"}
+
+{"input":"The container must display the approved product name, active ingredient, and registration number.","output":"LABELING_REQUIREMENT"}
+{"input":"The label must state the permitted application rate and the crops on which the pesticide may be used.","output":"LABELING_REQUIREMENT"}
+{"input":"The package must include the required hazard warnings and directions for safe handling.","output":"LABELING_REQUIREMENT"}
+{"input":"The product label shall specify the approved waiting period between application and harvest.","output":"LABELING_REQUIREMENT"}
+{"input":"All mandatory precautionary statements must appear prominently on the pesticide label.","output":"LABELING_REQUIREMENT"}
+
+{"input":"A pesticide may not be sold commercially until the competent authority has granted the required registration.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"The registrant must renew the product authorization before the existing registration expires.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"Manufacturers must obtain approval from the regulatory authority before introducing a new pesticide formulation to the market.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"The product registration must remain valid for the pesticide to continue being marketed.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"A company intending to distribute the pesticide nationally must first obtain the applicable regulatory authorization.","output":"REGISTRATION_REQUIREMENT"}
+
+{"input":"Unused pesticide containers must be stored in a locked cabinet that is inaccessible to children.","output":"STORAGE_REQUIREMENT"}
+{"input":"Pesticide products must be kept in their original containers when not being used.","output":"STORAGE_REQUIREMENT"}
+{"input":"The pesticide must be stored in a dry, well-ventilated area away from direct sunlight.","output":"STORAGE_REQUIREMENT"}
+{"input":"Pesticide containers must be kept separate from food, beverages, animal feed, and medicines.","output":"STORAGE_REQUIREMENT"}
+{"input":"Partially used pesticide containers must remain securely closed while stored between applications.","output":"STORAGE_REQUIREMENT"}
+
+{"input":"The applicator must maintain the required setback distance from residential areas during spraying.","output":"APPLICATION_REQUIREMENT"}
+{"input":"Operators must calibrate the application equipment before applying the pesticide to the crop.","output":"APPLICATION_REQUIREMENT"}
+{"input":"The pesticide must be applied only at the authorized rate specified for the target crop.","output":"APPLICATION_REQUIREMENT"}
+{"input":"Applicators must stop spraying when wind conditions exceed the permitted operating limit.","output":"APPLICATION_REQUIREMENT"}
+{"input":"During treatment, the operator must maintain the required buffer zone around nearby ponds.","output":"APPLICATION_REQUIREMENT"}
+
+{"input":"The pesticide must not be discharged into rivers, lakes, or other surface waters.","output":"ENVIRONMENTAL_REQUIREMENT"}
+{"input":"Use of the pesticide is prohibited where it could harm protected aquatic organisms.","output":"ENVIRONMENTAL_REQUIREMENT"}
+{"input":"The product must be used in a manner that prevents contamination of groundwater.","output":"ENVIRONMENTAL_REQUIREMENT"}
+{"input":"The pesticide must not be applied in conditions that could result in unacceptable harm to pollinating insects.","output":"ENVIRONMENTAL_REQUIREMENT"}
+{"input":"Measures must be taken to prevent pesticide residues from adversely affecting non-target wildlife.","output":"ENVIRONMENTAL_REQUIREMENT"}
+
+{"input":"The registrant must notify the regulatory authority of any confirmed incident involving significant pesticide exposure.","output":"REPORTING_REQUIREMENT"}
+{"input":"Manufacturers must submit an annual report containing the quantity of pesticide produced and distributed.","output":"REPORTING_REQUIREMENT"}
+{"input":"Any significant change in the product's composition must be reported to the competent authority.","output":"REPORTING_REQUIREMENT"}
+{"input":"The company must provide the regulator with monitoring data collected during the reporting period.","output":"REPORTING_REQUIREMENT"}
+{"input":"A suspected adverse environmental incident involving the pesticide must be reported to the designated authority.","output":"REPORTING_REQUIREMENT"}

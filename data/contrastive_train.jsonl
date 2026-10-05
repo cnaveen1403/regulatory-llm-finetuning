@@ -1,0 +1,23 @@
+{"input":"The applicator must maintain a 30-meter buffer zone from the nearest pond while spraying the pesticide.","output":"APPLICATION_REQUIREMENT"}
+{"input":"The pesticide must not contaminate ponds or other surface water because of runoff from treated fields.","output":"ENVIRONMENTAL_REQUIREMENT"}
+
+{"input":"The operator must stop applying the pesticide when wind speed exceeds the specified limit.","output":"APPLICATION_REQUIREMENT"}
+{"input":"The pesticide must not be used when conditions could cause unacceptable harm to nearby wildlife.","output":"ENVIRONMENTAL_REQUIREMENT"}
+
+{"input":"The applicator must observe the required re-entry interval before allowing workers to enter the treated field.","output":"APPLICATION_REQUIREMENT"}
+{"input":"Workers must not be exposed to pesticide residues that could cause harmful health effects.","output":"SAFETY_REQUIREMENT"}
+
+{"input":"The operator must wear the required protective equipment while applying the pesticide.","output":"APPLICATION_REQUIREMENT"}
+{"input":"Workers handling the concentrated pesticide must wear chemical-resistant gloves to prevent exposure.","output":"SAFETY_REQUIREMENT"}
+
+{"input":"The manufacturer must obtain regulatory authorization before selling the pesticide.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"The manufacturer must submit annual sales information to the regulatory authority.","output":"REPORTING_REQUIREMENT"}
+
+{"input":"The company must renew the pesticide registration before its authorization expires.","output":"REGISTRATION_REQUIREMENT"}
+{"input":"The company must notify the authority of a significant change in the quantity of pesticide distributed.","output":"REPORTING_REQUIREMENT"}
+
+{"input":"People exposed to the pesticide must receive appropriate medical treatment for poisoning symptoms.","output":"SAFETY_REQUIREMENT"}
+{"input":"The pesticide must not cause unacceptable harm to fish or other aquatic organisms.","output":"ENVIRONMENTAL_REQUIREMENT"}
+
+{"input":"Handlers must wash contaminated skin immediately after accidental pesticide exposure.","output":"SAFETY_REQUIREMENT"}
+{"input":"Pesticide use must be managed to prevent contamination of groundwater and surrounding ecosystems.","output":"ENVIRONMENTAL_REQUIREMENT"}
